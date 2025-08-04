@@ -1,0 +1,58 @@
+{
+  "name": "@el173/use-reachability",
+  "version": "1.0.0",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "A universal React/React Native/Next.js hook for monitoring backend reachability via health check endpoints.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --clean",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "hook",
+    "nextjs",
+    "api",
+    "reachability-hook",
+    "react-hook",
+    "react-native-hook",
+    "react-native-reachability",
+    "reachability",
+    "fetch",
+    "health-check",
+    "network"
+  ],
+  "author": "Hashith Karunarathne",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "@types/react": "^19.1.9",
+    "eslint": "^9.32.0",
+    "prettier": "^3.6.2",
+    "react": "^19.1.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/el173/use-reachability.git"
+  },
+  "bugs": {
+    "url": "https://github.com/el173/use-reachability/issues"
+  },
+  "homepage": "https://github.com/el173/use-reachability#readme"
+}
